@@ -4,6 +4,7 @@
 // // // // let sum = a + b 
 // // // // console.log(sum) // 50
 Object.defineProperty(exports, "__esModule", { value: true });
+//import { arr } from "./data"
 // // // function sum(a,b){
 // // //     return a+b
 // // // }
@@ -124,25 +125,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //     console.log(`${n1} $ {operator} $ {n2} = ${n1 / n2}`);
 // else console.log("Invalid Operator")
 // export{}
-// let prompt = require (`prompt-sync`) ()
-// let n1 = parseInt( prompt("Enter your First Number"))
-// let n2 = parseInt( prompt("Enter your Second Number"))
-// let operator = ( prompt("Enter your 1st Operator (+,-,*,/"))
-// if (operator == "+"){
-//     console.log(` ${n1} $ {operator} $ {n2} = ${n1+n2} `)
-// }
-//     else  if(operator == "-"){
-//         console.log (`${n1} ${operator} ${n2} = ${n1-n2}`)
-//     }
-//     else if (operator == "*"){
-//         console.log (`${n1} ${operator} ${n2}= ${n1*n2}`)
-//     }
-//     else if (operator == "/"){
-//         console.log (`${n1} ${operator} ${n2} = ${n1/n2}`)
-//     }
-//     else ("Enter Correct Operator")
-//     export{}
-// var Name:string = "Eric"
 // console.log (`hellow ${Name} would your like to learn python today`);
 // let name:string = "Rabi"
 // console.log (name.toLowerCase())
@@ -172,22 +154,40 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // let val:string []= [ "Rabi","Sami","Subhan"];
 // for(let i=0 ; i<val.length; i++){
 //     console.log(val[i])
-var promt = require("prompt-sync");
-var n1 = Number(prompt("enter the first number"));
-var n2 = Number(prompt("enter the second number"));
-var n3 = Number(prompt("Enter Your Desire Operator"));
-var operator = (promt(["addition", "subtractoin", "multiplicatoin", "devision"]));
-if (operator === "Additoin") {
-    console.log("Your Answer is ", n1 + n2);
+// let promt = require("prompt-sync");
+// let n1  = Number(prompt("enter the first number"));
+// let n2 = Number(prompt( "enter the second number"));
+// let n3 = Number(prompt("Enter Your Desire Operator"));
+// let operator =  (promt(["addition","subtractoin","multiplicatoin","devision"]));
+// if( operator === "Additoin"){
+//     console.log( "Your Answer is ", n1 + n2  )
+// }
+// else if (operator ==="subtractoin") {
+//     console.log( "Your Answer is ", n1 - n2  )
+// }
+// else if (operator==="multiplicatoin") {
+//     console.log( "Your Answer is ", n1 * n2  )
+// }
+// else if ( operator === "devisoin"){
+//     console.log( "Your Answer is ", n1 / n2  )
+// }
+// else ( console.log("Invalid Input "))
+// export{}
+let prompt = require(`prompt-sync`)();
+let n1 = parseInt(prompt("Enter your First Number"));
+let n2 = parseInt(prompt("Enter your Second Number"));
+let operator = (prompt("Enter your 1st Operator (+,-,*,/"));
+if (operator == "+") {
+    console.log(` ${n1} $ {operator} $ {n2} = ${n1 + n2} `);
 }
-else if (operator === "subtractoin") {
-    console.log("Your Answer is ", n1 - n2);
+else if (operator == "-") {
+    console.log(`${n1} ${operator} ${n2} = ${n1 - n2}`);
 }
-else if (operator === "multiplicatoin") {
-    console.log("Your Answer is ", n1 * n2);
+else if (operator == "*") {
+    console.log(`${n1} ${operator} ${n2}= ${n1 * n2}`);
 }
-else if (operator === "devisoin") {
-    console.log("Your Answer is ", n1 / n2);
+else if (operator == "/") {
+    console.log(`${n1} ${operator} ${n2} = ${n1 / n2}`);
 }
 else
-    (console.log("Invalid Input "));
+    ("Enter Correct Operator");
